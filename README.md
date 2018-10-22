@@ -1,5 +1,3 @@
 ## Download
 
-<a href="./index-linux" download="nba">Dowload Here</a>
-
-<button name="button" onclick="http://www.google.com">Click me</button>
+<a href="./exec/nba-calendar-linux64" download="nba">Dowload Linux - 64 bits</a>
