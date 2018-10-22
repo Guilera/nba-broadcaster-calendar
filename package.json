@@ -1,0 +1,16 @@
+{
+  "name": "nba",
+  "version": "1.0.0",
+  "description": "Extract nba broadcaster schedule from nba official webpage and export a .csv file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Guilera Gutchenzo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fs": "^0.0.1-security",
+    "moment": "^2.22.2"
+  }
+}
