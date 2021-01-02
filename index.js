@@ -3,7 +3,7 @@ const moment = require("moment");
 const fs = require("fs");
 
 const year = new Date().getFullYear();
-const url = `http://global.nba.com/wp-content/themes/nba-global/lib/proxy.php?url=http%253A//stats.nba.com/stats/internationalbroadcasterschedule%3FLeagueID%3D00%26Season%3D${year}%26RegionID%3D11`
+const url = `https://stats.nba.com/stats/internationalbroadcasterschedule?LeagueID=00&Season=2020&RegionID=11`
 let args = process.argv.slice(2).map(g => g.toLowerCase());
 
 let output = "terminal";
@@ -64,7 +64,7 @@ filterGames = (data, args) => {
 		let teams = ([game.htShortName, game.htNickName, game.vtShortName, game.vtNickName]).map(g => g.toLowerCase());
 		if (mode === "single")
 			teams = teams.join(" ").split(" ");
-		
+
 		return args.some(arg => teams.includes(arg));
 	});
 };
